@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <meta name="referrer" content="always">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UMM Computer Science</title>
+  <link rel="stylesheet" type="text/css" href="./css/style1.css">
+  <!-- Add some Google Fonts. -->
+  <!-- Adding fonts like this increases load time, so you don't want to include fonts -->
+  <!-- you're not actually using. -->
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:600%7CPatua+One%7CMarcellus%7CDancing+Script" rel="stylesheet">
+     <!-- html and javascript code for switching style on the fly comes from:
+     https://stackoverflow.com/questions/19844545/replacing-css-file-on-the-fly-and-apply-the-new-style-to-the-page -->
+     <script>
+         function changeCSS(cssFile, cssLinkIndex) {
+
+             // noinspection SpellCheckingInspection
+             var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+             var newlink = document.createElement("link");
+             newlink.setAttribute("rel", "stylesheet");
+             newlink.setAttribute("type", "text/css");
+             newlink.setAttribute("href", "./css/"+cssFile);
+
+             document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+         }
+     </script>
+ </head>
+
+ <body>
+ <h1 id="main-title">UMM Computer Science</h1>
+ <div class="pslo-courses-container">
+   <div class="section" id="pslo">
+     <h2>Program Student Learning Outcomes for UMM Computer Science</h2>
+     <ol>
+       <li class="pslo">Students will be able to apply fundamental principles of computer science to solve problems in
+         all core areas of computer science.
+       </li>
+       <li class="pslo">Students will demonstrate technological flexibility through the ability to employ new sets of
+         tools effectively.
+       </li>
+       <li class="pslo">Students will be able to communicate technical ideas effectively both orally and in written
+         form.
+       </li>
+       <li class="pslo">Students will demonstrate their ability to work in groups as part of an effective team.</li>
+       <li class="pslo">Students will be able to identify and analyze ethical implications involving technology.</li>
+     </ol>
+   </div>
+   <div class="section" id="courses">
+     <h2>Required Courses</h2>
+     <ul>
+       <li class="major-element level-1xxx" id="introductory-sequence">An introductory course sequence
+         <ul>
+           <li><span class="discipline csci">CSci</span> <span class="course-number">1302</span></li>
+           <li>One of:
+             <ul>
+               <li><span class="discipline csci">CSci</span> <span class="course-number">1201</span></li>
+               <li><span class="discipline csci">CSci</span> <span class="course-number">1301</span></li>
+             </ul>
+           </li>
+         </ul>
+       </li>
+       <li class="major-element level-2xxx" id="data-structures"><span class="discipline csci">CSci</span> <span
+         class="course-number">2101</span></li>
+       <li class="major-element level-3xxx" id="core-courses">Core Courses
+         <ul>
+           <li><span class="discipline csci">CSci</span> <span class="course-number">3402</span></li>
+           <li><span class="discipline csci">CSci</span> <span class="course-number">3403</span></li>
+           <li><span class="discipline csci">CSci</span> <span class="course-number">3501</span></li>
+           <li><span class="discipline csci">CSci</span> <span class="course-number">3601</span></li>
+         </ul>
+       </li>
+       <li class="major-element level-4xxx" id="electives">Ten credits of electives 4xxx so that the split of credits is
+         at least 4 in two of the areas and at least 2 in the third area.
+       </li>
+       <li class="major-element level-1xxx" id="ethical-and-social-implications"><span class="discipline is">IS</span>
+         <span class="course-number">1091</span></li>
+       <li class="major-element level-4xxx" id="senior-seminar"><span class="discipline csci">CSci</span> <span
+         class="course-number">4901</span></li>
+       <li class="major-element" id="math-and-stats">12 credits of:
+         <ul>
+           <li><span class="discipline math">Math</span> at or above <span class="course-number">1101</span> excluding
+             "History of math"
+           </li>
+           <li><span class="discipline stat">Stat</span> 2xxx or above</li>
+         </ul>
+       </li>
+     </ul>
+   </div>
+ </div>
+ <div class="faculty-container">
+   <div class="section" id="faculty">
+     <h2>Faculty</h2>
+     <ul id="faculty-list">
+       <li id="Elena">
+         <div class="name">Elena</div>
+         <div class="office">Science 2325</div>
+         <img class="pic" src="./assets/images/Elena.jpg" alt="Elena"/>
+       </li>
+       <li id="KK">
+         <div class="name">KK</div>
+         <div class="office">Science 2525</div>
+         <img class="pic" src="./assets/images/KK.jpg"  alt="KK" />
+       </li>
+       <li id="Nic">
+         <div class="name">Nic</div>
+         <div class="office">Science 1315</div>
+         <img class="pic" src="./assets/images/Nic.jpg"  alt="Nic" />
+       </li>
+       <li id="Peter">
+         <div class="name">Peter</div>
+         <div class="office">Science 1440</div>
+         <img class="pic" src="./assets/images/Peter.jpg"  alt="Peter" />
+       </li>
+
+     </ul>
+   </div>
+
+   <div class="card" id="validation">
+     <div class="card-body">
+       <h6 class="card-title">Validation</h6>
+       <p class="card-text">
+         In general you wouldn't want to put links like these
+         (or <a href="https://stackoverflow.com/questions/36383923/how-to-get-the-badge-when-validating-html-in-the-w3c-validator">
+         validation badges</a>) on real project web pages. We've included them because it makes it easier for us to
+         quickly check your HTML.
+       </p>
+       <ul class="card-text">
+         <li><a href="https://validator.w3.org">Check the HTML</a></li>
+         <li><a href="http://jigsaw.w3.org/css-validator/">Check the CSS</a></li>
+       </ul>
+       <p class="card-text">
+         Thanks for writing clean HTML and CSS!
+       </p>
+     </div>
+   </div>
+
+   <!-- html and javascript code for switching style on the fly comes from:
+   https://stackoverflow.com/questions/19844545/replacing-css-file-on-the-fly-and-apply-the-new-style-to-the-page -->
+   <div id="style">
+     <ul>
+       <li><a href="#" onclick="changeCSS('style1.css', 0);">Style 1</a></li>
+       <li><a href="#" onclick="changeCSS('style2.css', 0);">Style 2</a></li>
+     </ul>
+   </div>
+ </div>
+ </body>
+</html>

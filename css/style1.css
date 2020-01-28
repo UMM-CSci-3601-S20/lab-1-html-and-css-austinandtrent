@@ -1,0 +1,145 @@
+/*
+ * hint:
+ * use # in front of the name of an id from your html page
+ * use . in front of the name of a class of things from your html page
+ * use , to separate a list of things that have some shared css rule
+ */
+
+body {
+    padding: 30px;
+    background-color: #7A0019;
+    display: flex; /* this is the flexbox model. It adds responsive design to its items */
+    flex-direction: column; /* this says how the flex items will align (e.g. 'row') */
+    align-items: center; /* These next two properties center the flex items */
+    justify-content: center;
+}
+
+/*
+ * Use of media query to change the flex-direction of the #pslo and #courses
+ * elements when the width of the screen exceeds 925px to put
+ * them side-by-side.
+ */
+@media screen and (min-width: 925px) {
+    .pslo-courses-container {
+      display: flex;
+      flex-direction: row;
+      max-width: 53em;
+    }
+}
+
+.faculty-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-title {
+    color: #FFDE7A;
+    font-family: 'Patua One', monospace;
+    text-align: center;
+    font-size: 4rem
+}
+
+h2 {
+    font-family: 'EB Garamond', serif;
+}
+
+.section {
+    border-radius: 25px;
+    padding: 20px;
+    border: 5px solid;
+    margin: 10px;
+    max-width: 48em;
+}
+
+#courses {
+    background-color: #FFDE7A;
+    font-family: 'Marcellus', sans-serif;
+}
+
+#pslo {
+    background-color: #d5d6d2;
+    font-family: 'Marcellus', sans-serif;
+}
+
+#faculty {
+    background-color: #f9f7f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#faculty>ul>li {
+    display: inline-block;
+    font-family: sans-serif;
+    padding: 30px;
+}
+
+#faculty-list {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* This tell's the flex items to wrap if there
+                        isn't enough space for all of the items. Without this the
+                        faculty images will be in a row and only resize well unitl around
+                        550px width of screen. */
+    justify-content: center;
+    align-content: center;
+}
+
+.name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem;
+}
+
+.office {
+  font-family: 'Marcellus', sans-sans-serif;;
+}
+
+img.pic {
+    width: 100%;
+    border: 4px solid #000000;
+}
+
+#style ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#style li {
+    float: left; /*explore what happens if this is 'right' instead*/
+}
+
+#style li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
+    text-decoration: none;
+}
+
+/* Change the link background color to #000 (black) on hover */
+#style li a:hover {
+    background-color: #000;
+}
+
+#style {
+    position: fixed;
+    background-color: #7A0019;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 55px;
+    padding-top: 10px;
+}
+
+#validation {
+  font-size: 80%;
+  background-color: #d5d6d2;
+  padding: 25px;
+}

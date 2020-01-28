@@ -1,0 +1,12 @@
+/*
+hint:
+use # in front of the name of an id from your html page
+use . in front of the name of a class of things from your html page
+use , to separate a list of things that have some shared css rule
+use float to make something locate itself on the right or left
+*/
+
+body{
+    padding: 30px;
+    background-color: #ffffff;
+}
