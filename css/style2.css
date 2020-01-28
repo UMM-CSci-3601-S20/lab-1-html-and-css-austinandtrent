@@ -7,6 +7,20 @@ use float to make something locate itself on the right or left
 */
 
 body{
-    padding: 30px;
-    background-color: #ffffff;
+  padding: 30px;
+  border: 10px solid whitesmoke;
+  background-color: rgb(4, 94, 67);
+  display: flex; /* this is the flexbox model. It adds responsive design to its items */
+  flex-direction: column; /* this says how the flex items will align (e.g. 'row') */
+  align-items: center; /* These next two properties center the flex items */
+  justify-content: center;
+}
+#main-title{
+  border:2px solid white;
+  overflow: hidden;
+  /*margin: 0;*/
+  color: rgb(253, 253, 253);
+  font-family: 'Roboto', monospace;
+  text-align: center;
+  font-size: 5rem
 }
