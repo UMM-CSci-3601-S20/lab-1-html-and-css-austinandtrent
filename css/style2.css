@@ -8,7 +8,7 @@ use float to make something locate itself on the right or left
 
 body{
   padding: 30px;
-  background: url("/home/robi1467/Software dev/lab-1-html-and-css-austinandtrent/assets/images/backgroundImg.jpg");
+  background: url("../assets/images/backgroundImg.jpg");
   background-repeat: no-repeat;
   background-position: left;
   background-size: 3000px;/*Fills in the backround while still looking sharp*/
@@ -18,9 +18,9 @@ body{
   align-items: center; /* These next two properties center the flex items */
   justify-content: center;
 }
-/* The Body is much different from style1 since the background is an*/
-/*I am aiming to create a slick yet simple design for the page which*/
-/*starts with the body*/
+/* The Body is much different from style1 since the background is an
+I am aiming to create a slick yet simple design for the page which
+starts with the body*/
 
 
 
@@ -160,9 +160,12 @@ border-radius: 25px;
   transform: scale(1.25);
   background-color: white;
 }
+
 .cloud a:hover{
   color: maroon;
 }
+/*Gold link indicates version control. Italisized indicate IDE, and white*/
+/*backround when hovered over indicates a cloud service*/
 #style ul {
   list-style-type: none;
   margin: 0;
