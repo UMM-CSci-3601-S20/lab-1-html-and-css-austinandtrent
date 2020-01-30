@@ -11,7 +11,7 @@ body{
   background: url("/home/robi1467/Software dev/lab-1-html-and-css-austinandtrent/assets/images/backgroundImg.jpg");
   background-repeat: no-repeat;
   background-position: left;
-  background-size: 1750px;/*Fills in the backround while still looking sharp*/
+  background-size: 3000px;/*Fills in the backround while still looking sharp*/
   background-attachment: fixed;
   display: grid; /* this is the flexbox model. It adds responsive design to its items */
   grid-template-columns: auto; /* this says how the flex items will align (e.g. 'row') */
@@ -126,37 +126,71 @@ a:hover{
 }/*with the links on this sheet I decided to make it so that they would
 *//*always be maroon, but to switch to the color gold when hovered over*/
 
+.tool-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#tool{
+  background-color: #fa5c0e;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  margin: 10px;
+}
 .functionality{
-  position:fixed;
-  padding: 0;
-  margin: 0;
-  left: 0;
-  right: 0;
-  top: -70px;
-  height: 5px;
-  min-width: 1000px;
+  border-radius: 25px;
+  padding: 20px;
+  border: 5px solid;
+  margin: 10px;
+  max-width: 48em;
 }
-.functionality h2{
-  visibility: hidden;
+
+#tool li a:hover{
+  background-color: gold;
 }
-#tool ul{
-  list-style-type:none;
+
+#style ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgba(255, 255, 255);
+  background-color: #333;
 }
-#tool li {
+
+#style li {
   float: left; /*explore what happens if this is 'right' instead*/
 }
 
-#tool li a {
+#style li a {
   display: block;
-  color: maroon;
+  color: white;
   text-align: center;
   padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
   text-decoration: none;
 }
-#tool li a:hover{
-  background-color: gold;
+
+/* Change the link background color to #000 (black) on hover */
+#style li a:hover {
+  background-color: #000;
+}
+
+#style {
+  position: fixed;
+  background-color: #7A0019;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 55px;
+  padding-top: 10px;
+}
+
+#validation {
+  font-size: 80%;
+  background-color: #d5d6d2;
+  padding: 25px;
+  margin: 10px;
 }
