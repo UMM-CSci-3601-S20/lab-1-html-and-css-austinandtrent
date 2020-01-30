@@ -8,25 +8,155 @@ use float to make something locate itself on the right or left
 
 body{
   padding: 30px;
-  border: 10px solid whitesmoke;
   background: url("/home/robi1467/Software dev/lab-1-html-and-css-austinandtrent/assets/images/backgroundImg.jpg");
   background-repeat: no-repeat;
   background-position: left;
-  background-size: 2000px;
+  background-size: 1750px;/*Fills in the backround while still looking sharp*/
   background-attachment: fixed;
-  /*background-color: rgb(4, 94, 67);*/
-  display: flex; /* this is the flexbox model. It adds responsive design to its items */
-  flex-direction: column; /* this says how the flex items will align (e.g. 'row') */
+  display: grid; /* this is the flexbox model. It adds responsive design to its items */
+  grid-template-columns: auto; /* this says how the flex items will align (e.g. 'row') */
   align-items: center; /* These next two properties center the flex items */
   justify-content: center;
 }
+/* The Body is much different from style1 since the background is an*/
+/*I am aiming to create a slick yet simple design for the page which*/
+/*starts with the body*/
+
+
+
 #main-title{
-  border:2px solid white;
-  border-radius: 25px;
   padding: 10px;
+  background-color:rgba(0, 0, 0, 0.35);
   color: rgb(253, 253, 253);
   font-family: 'Roboto', monospace;
   text-align: center;
   font-size: 5rem
 }
 
+@media screen and (min-width: 925px) {
+  .pslo-courses-container {
+    display: grid;
+    grid-row:auto;
+    max-width: 53em;
+  }
+}
+
+.faculty-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  color:white;
+  align-items: center;
+  font-family: 'Roboto',monospace;
+}
+.section {
+  padding: 20px;
+  margin: 10px;
+  max-width: 48em;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+#faculty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+#faculty>ul>li {
+  display: inline-block;
+  font-family: sans-serif;
+  padding: 30px;
+}
+
+#faculty-list {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* This tell's the flex items to wrap if there
+                      isn't enough space for all of the items. Without this the
+                      faculty images will be in a row and only resize well unitl around
+                      550px width of screen. */
+  justify-content: center;
+  align-content: center;
+}
+
+.name {
+color: white;
+font-family: 'Dancing Script', cursive;
+font-size: 2rem;
+}
+
+.office {
+color: white;
+margin-bottom: 8px;
+font-family: 'Marcellus', sans-sans-serif;;
+}
+
+img.pic {
+  width: 100%;
+  border: 4px solid maroon;
+  transition: .2s;
+}
+img.pic:hover{
+  transform: scale(1.1);
+  border-color:gold
+}
+
+#courses {
+  color:white;
+  font-family: 'Marcellus', sans-serif;
+}
+
+#pslo {
+  color: white;
+  font-family: 'Marcellus', sans-serif;
+}
+a{
+  color: maroon;
+}
+a:visited{
+  color: maroon;
+}
+a:hover{
+  color: gold;
+}/*with the links on this sheet I decided to make it so that they would
+*//*always be maroon, but to switch to the color gold when hovered over*/
+
+.functionality{
+  position:fixed;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+  top: -70px;
+  height: 5px;
+  min-width: 1000px;
+}
+.functionality h2{
+  visibility: hidden;
+}
+#tool ul{
+  list-style-type:none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255);
+}
+#tool li {
+  float: left; /*explore what happens if this is 'right' instead*/
+}
+
+#tool li a {
+  display: block;
+  color: maroon;
+  text-align: center;
+  padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
+  text-decoration: none;
+}
+#tool li a:hover{
+  background-color: gold;
+}
