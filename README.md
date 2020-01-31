@@ -44,9 +44,7 @@ To view your website, you should be able to simply open the `index.html` file in
 browser of choice. (In most cases, 'double clicking' the file should do this. In Visual Studio Code,
 you can right click on the file, choose "Copy Path", and paste that into the browser's URL bar.)
 
-Remove this line from your `README.md` file. Replace the URL in the next subsection with your
-team's GitHub.io URL, which should look something like
-this: <http://umm-csci-3601.github.io/3601-lab1_HTML-CSS/> but will not be identical.
+https://umm-csci-3601-s20.github.io/lab-1-html-and-css-austinandtrent/#
 
 ### Our Team's GitHub Pages URL
 
