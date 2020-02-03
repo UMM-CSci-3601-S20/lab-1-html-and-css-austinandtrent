@@ -1,0 +1,34 @@
+/* style3.css was used to further explore and have fun with css
+this is also in the CSSFun branch because of not wanting it to
+affect our grade at this point */
+
+
+body{
+  padding: 50px;
+  background-color: black;
+  background-size: 2000px;
+  color:white;
+
+}
+
+
+#main-title{
+  padding: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: right;
+
+
+}
+
+@media screen and (min-width: 925px) {
+  .pslo-courses-container {
+    display: -moz-grid-group;
+    justify-content: center;
+    max-width: 53em;
+  }
+}
+
+.faculty-container {
+display: -moz-grid-group;
+}
+
